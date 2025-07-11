@@ -183,7 +183,7 @@ export default function ConfigPanel({ onSubmitted }: ConfigPanelProps) {
                   </CardDescription>
                 </CardHeader>
 
-                <CardContent className="space-y-6 max-h-[42vh] overflow-y-auto">
+                <CardContent className="space-y-6 max-h-[42vh] overflow-y-auto pt-1">
                   {/* URL */}
                   <div className="flex items-center gap-3">
                     <Label
@@ -263,7 +263,7 @@ export default function ConfigPanel({ onSubmitted }: ConfigPanelProps) {
                     {/* User info */}
 
                     <div className="space-y-3">
-                      <Label htmlFor="requires-login">User info</Label>
+                      <Label>User info</Label>
 
                       <div className="flex gap-6 items-center">
                         <div className="flex items-center gap-2">
@@ -282,6 +282,7 @@ export default function ConfigPanel({ onSubmitted }: ConfigPanelProps) {
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             className="flex-1"
+                            disabled={submitting}
                           />
                         </div>
                         <div className="flex flex-1 items-center gap-2">
@@ -300,6 +301,7 @@ export default function ConfigPanel({ onSubmitted }: ConfigPanelProps) {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             className="flex-1"
+                            disabled={submitting}
                           />
                         </div>
                       </div>
@@ -318,7 +320,7 @@ export default function ConfigPanel({ onSubmitted }: ConfigPanelProps) {
                           placeholder="123 Main St, Anytown, USA"
                           value={address}
                           onChange={(e) => setAddress(e.target.value)}
-                          disabled={submitting || !requiresLogin}
+                          disabled={submitting}
                           className="flex-1"
                         />
                       </div>
