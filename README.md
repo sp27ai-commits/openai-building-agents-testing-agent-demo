@@ -1,4 +1,8 @@
-# Testing Agent Demo - test1
+# Testing Agent Demo - testing web apps with OpenAI's Computer Use Agent
+
+[![OpenAI](https://img.shields.io/badge/OpenAI-Testing%20Agent-blue.svg)](https://platform.openai.com/docs/guides/tools-computer-use)
+[![Node.js](https://img.shields.io/badge/Node.js-v18.16.0-green.svg)](https://nodejs.org/)
+[![Playwright](https://img.shields.io/badge/Playwright-v1.43.0-blue.svg)](https://playwright.dev)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](frontend/LICENSE)
 
