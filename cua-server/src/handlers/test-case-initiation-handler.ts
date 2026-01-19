@@ -29,7 +29,7 @@ export async function handleTestCaseInitiated(
     );
 
     // Create system prompt by combining form inputs.
-    const msg = `${testCase} URL: ${url} User Name: ${userName} Password: *********\n USER INFO:\n${userInfo}`;
+    const msg = `${testCase} URL: ${url} User Name: ${userName} Password: ${password}\n USER INFO:\n${userInfo}`;
 
     const testCaseAgent = new TestCaseAgent(loginRequired);
 
